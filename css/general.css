@@ -26,7 +26,7 @@ Primary: #e67e22
 Tints: #fdf2e9 #fae5d3
 Shades: #cf711f #45260a
 Accents:
-Greys: #555 #333 #6f6f6f 
+Greys: #555 #333 #6f6f6f #888 #767676
 
 SHADOWS:
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -50,6 +50,7 @@ Spacing system (px): 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -59,6 +60,8 @@ body {
   color: #555;
 }
 
+nav a {
+}
 /* General reusable components */
 .container {
   /* 1140px */
@@ -91,6 +94,9 @@ body {
 }
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-center-verticaly {
