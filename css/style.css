@@ -19,7 +19,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -523,7 +523,7 @@
 /* Footer section */
 
 .footer {
-  padding: 12.8rem;
+  padding: 12.8rem 0;
   border-top: 1px solid #eee;
 }
 
