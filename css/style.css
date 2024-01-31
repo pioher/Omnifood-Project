@@ -60,7 +60,7 @@
   border: none;
   background: none;
   cursor: pointer;
-
+  z-index: 999;
   display: none;
 }
 
