@@ -37,6 +37,32 @@ allLinks.forEach(function (link) {
   });
 });
 
+// Zrobienie headera sticky po tym jak minie sekcje hero
+
+const sectionHeroEL = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+      console.log(ent);
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting) {
+      console.log(ent);
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    // Jak tylko 0% sekcji hero jest w viewport
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHeroEL);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
